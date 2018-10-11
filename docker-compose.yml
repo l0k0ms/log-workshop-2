@@ -12,9 +12,10 @@ services:
       - DD_APM_ANALYZED_SPANS=users-api|express.request=1,sensors-api|flask.request=1,pumps-service|flask.request=1,iot-frontend|flask.request=1
       - DD_TAGS='env:workshop'
       - DD_PROCESS_AGENT_ENABLED=true
+      - DD_AC_EXCLUDE='image:agent'
       - DD_LOGS_ENABLED=true
       - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
-
+      
     ports:
       - "8126:8126"
     volumes:
@@ -22,7 +23,7 @@ services:
       - /proc/:/host/proc/:ro
       - /sys/fs/cgroup/:/host/sys/fs/cgroup:ro
       - /etc/passwd:/etc/passwd:ro
-      - /opt/datadog-agent/run:/opt/datadog-agent/run:rw
+
     labels:
       com.datadoghq.ad.logs: '[{"source": "docker", "service": "agent"}]'
 
@@ -40,7 +41,7 @@ services:
     depends_on:
       - db
     labels:
-      com.datadoghq.ad.logs: '[{"source": "iot-frontend", "service": "iot-frontend"}}]'
+      com.datadoghq.ad.logs: '[{"source": "frontend", "service": "frontend"}]'
 
   noder:
     container_name: "noder"

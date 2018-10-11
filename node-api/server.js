@@ -35,6 +35,7 @@ async function addUsers() {
         else {
             console.log('creating ' + user.uid)
             const created = await hmsetAsync('user-' + user.uid, {
+                'id': user.id,
                 'uid': user.uid,
                 'name': user.name,
                 'demand_gph': user.demand_gph,
@@ -86,6 +87,16 @@ app.post('/users', async (req, res) => {
         return res.json({"user": newUser, "status": created})
     } catch (e) {
         console.log(e)
+        res.sendStatus(500)
+    }
+})
+
+app.get('/users/:userId/', async (req, res) => {
+    try {
+        const userId = req.params.userId
+        const user = await hgetallAsync('user-' + userId)
+        return res.json(user)
+    } catch (e) {
         res.sendStatus(500)
     }
 })
