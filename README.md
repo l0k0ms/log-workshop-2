@@ -1,20 +1,6 @@
 # Distributed Tracing with APM Workshop
 
-This will be a follow up repo to my [2018 Dash APM Workshop](https://github.com/burningion/dash-apm-workshop), incorporating feedback from the event.
-
-Specifically, this will add:
-
-* Starting with Automatic Instrumentation, and a more complex example program
-* More live traffic, to see Trace Search (announced at DASH)
-* Debugging a bigger, more complex system, to showcase a more real world use case
-* More Datadog UI usage
-* More relevant examples and names for traces
-* More realistic errors 
-* ... and should also work in Windows.
-
-In the meantime, unless otherwise noted, this repository is a work in progress. 
-
-If you've stumbled upon it and have feedback, or have something you'd  like to see, feel free to create an issue.
+This is repo for a log workshop based on [2018 Dash APM Workshop](https://github.com/burningion/dash-apm-workshop) made by [Burningion](https://github.com/burningion).
 
 # Running the Application
 
@@ -36,11 +22,3 @@ $ npm start
 ```
 
 It should connect to the running frontend API container, allowing for easier development. When you're finished making changes, you can do a `npm build`, and then copy the javascript from the `build` subdirectory into the Flask frontend app.
-
-# Ideas for Live Debugging via Tracing
-
-These are some ideas, that have yet to be implemented:
-
-* A bad deploy that triggers a problem, breaking parts of API
-* Introducing latency in a service in the middle of the request lifecycle
-* Introducing a traffic spike / poison payload downstream
