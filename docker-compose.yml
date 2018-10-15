@@ -41,7 +41,7 @@ services:
     depends_on:
       - db
     labels:
-      com.datadoghq.ad.logs: '[{"source": "frontend", "service": "frontend"}]'
+      com.datadoghq.ad.logs: '[{"source": "frontend", "service": "frontend", "log_processing_rules": [{"type": "multi_line", "name": "log_start_with_ip", "pattern" : "(172.20.0.1|Traceback)"}]}]'
 
   noder:
     container_name: "noder"
