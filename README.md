@@ -6,7 +6,7 @@ This is a repository for a log workshop based on [2018 Dash APM Workshop](https:
 
 The workshop is scheduled for an hour and a half. In this short time frame, having prerequisites installed is crucial to maximize everyone's hands on time.
 
-Please ensure you accomplished the following steps before the event:
+Please ensure you accomplished the following steps **before the event**:
 
 1. Install [Docker CE](https://store.docker.com/search?type=edition&offering=community).
 
@@ -14,7 +14,7 @@ Please ensure you accomplished the following steps before the event:
 
 3. Clone this repository on your local machine: ```git clone https://github.com/l0k0ms/log-workshop-2.git```
 
-4. Pull Docker images to your local machine **before the event**, so we don't all overwhelm the WiFi: `docker-compose up` (this make take several minutes).
+4. Pull Docker images to your local machine `docker-compose up` (this make take several minutes).
     When it finishes, load [http://localhost:5000](http://localhost:5000) in a private window and check that everything is up and running. 
 
 5. (Optional) The workshop itself is written in a [Jupyter notebook](http://jupyter.org/), allowing you to mix and edit content locally. 
@@ -34,7 +34,7 @@ Please ensure you accomplished the following steps before the event:
     ```bash
     POSTGRES_USER=postgres POSTGRES_PASSWORD=122356 DD_API_KEY=<DATADOG_API_KEY> docker-compose up
     ```
-    Replace `<DATADOG_API_KEY>` by the [API key provided for your Datadog platform](https://app.datadoghq.com/account/settings#api).
+    Replace `<DATADOG_API_KEY>` with the [API key provided for your Datadog platform](https://app.datadoghq.com/account/settings#api).
 
 4. Then open the web app at [http://localhost:5000](http://localhost:5000), create some pumps and cities.
 
