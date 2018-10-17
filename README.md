@@ -19,7 +19,7 @@ Please ensure you accomplished the following steps **before the event**:
 
 5. (Optional) The workshop itself is written in a [Jupyter notebook](http://jupyter.org/), allowing you to mix and edit content locally. 
     If you want to be able to add notes and save them locally, [install Jupyter](http://jupyter.org/install), and then open the `log_workshop_instructions.ipynb` by doing a `jupyter-notebook` in the workshop directory.
-    This is completely optional, as Github has a built in viewer for Jupyter notebooks. [Check the repository notebook](https://github.com/l0k0ms/log-workshop-2/blob/master/log_workshop_instructions.ipynb).
+    This is completely optional, as [the workshop content can be accessed in Github directly](https://github.com/l0k0ms/log-workshop-2/blob/master/log_workshop_instructions.md).
 
 # Running the Application
 
@@ -38,4 +38,4 @@ Please ensure you accomplished the following steps **before the event**:
 
 4. Then open the web app at [http://localhost:5000](http://localhost:5000), create some pumps and cities.
 
-5. Finally follow the [instructions of this workshop](https://github.com/l0k0ms/log-workshop-2/blob/master/log_workshop_instructions.ipynb).
+5. Finally follow the [instructions of this workshop](https://github.com/l0k0ms/log-workshop-2/blob/master/log_workshop_instructions.md).

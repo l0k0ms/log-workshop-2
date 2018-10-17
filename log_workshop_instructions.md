@@ -390,7 +390,6 @@ Let's build a monitor upon our logs that warns us if an error occures and that s
 
 ![manage_monitor_page](images/logs_workshop/manage_monitor_page.png)
 
-
 ### Monitor notification
 
 If you entered your email adress in the notification you should receive an email with a snippet of 10 logs matching your query:
