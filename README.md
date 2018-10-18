@@ -1,4 +1,4 @@
-# Distributed Tracing with APM Workshop
+# Log Workshop
 
 This is a repository for a log workshop based on [2018 Dash APM Workshop](https://github.com/burningion/dash-apm-workshop) made by [Burningion](https://github.com/burningion).
 
