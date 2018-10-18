@@ -1,7 +1,7 @@
 version: '3'
 services:
   agent:
-    image: "datadog/agent:latest"
+    image: "datadog/agent:6.5.2"
     container_name: "datadog-agent"
     environment:
       - DD_API_KEY
@@ -70,7 +70,7 @@ services:
 
   redis:
     container_name: "redis"
-    image: redis:latest
+    image: redis:5.0-rc4-alpine
     depends_on:
       - agent
 
