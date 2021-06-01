@@ -16,7 +16,7 @@ redis==2.10.6
 requests==2.19.1
 requests-threads==0.1.1
 SQLAlchemy==1.2.11
-urllib3==1.23
+urllib3==1.26.5
 Werkzeug==0.14.1
 wrapt==1.10.11
 twisted==18.7.0
