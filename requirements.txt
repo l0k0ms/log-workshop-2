@@ -19,4 +19,4 @@ SQLAlchemy==1.2.11
 urllib3==1.23
 Werkzeug==0.14.1
 wrapt==1.10.11
-twisted==18.7.0
+twisted==22.10.0
